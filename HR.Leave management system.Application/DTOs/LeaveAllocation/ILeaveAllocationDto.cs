@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HR.Leave_management_system.Application.DTOs.LeaveAllocation
+﻿namespace HR.Leave_management_system.Application.DTOs.LeaveAllocation
 {
+    /// <summary>
+    /// Defines the properties required for leave allocation data.
+    /// </summary>
     public interface ILeaveAllocationDto
     {
-        public int NumberOfDays { get; set; }
-        public int LeaveTypeId { get; set; }
-        public int Period {  get; set; }
+        int NumberOfDays { get; set; }
+
+        int LeaveTypeId { get; set; }
+
+        int Period { get; set; }
     }
 }
